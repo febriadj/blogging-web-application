@@ -1,0 +1,13 @@
+GET http://localhost:8080/articles
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/articles
+Content-Type: application/json; multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file_name"; filename=".gitignore"
+
+{
+  "title": "Testing Title",
+  "description": "Testing Description"
+}
