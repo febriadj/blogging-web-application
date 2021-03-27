@@ -1,7 +1,7 @@
 'use strict'
 
 const mysql = require('mysql')
-const { tableArticles } = require('./db-table')
+const { tableArticles, tableComments } = require('./db-table')
 
 const conn = mysql.createConnection({
   host: process.env.DB_HOST,
@@ -11,12 +11,17 @@ const conn = mysql.createConnection({
 })
 
 async function dbConnect() {
-  let articles = await tableArticles()
+  let 
+    articles = await tableArticles(),
+    comments = await tableComments()
 
   conn.connect(function(err) {
     if (err) return console.log(err)
 
+    // create table articles and comments
     conn.query(articles, err => err ? console.log(err) : null)
+    conn.query(comments, err => err ? console.log(err) : null)
+
     console.log('mysql connected')
   })
 }
