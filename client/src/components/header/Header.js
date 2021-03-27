@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../../assets/css/header.css'
+import headerIcon from '../../assets/images/medium-icon.png'
 
 function Header() {
   return (
     <div id="header">
       <div id="header-wrap">
-        <span className="icon"></span>
+        <img src={ headerIcon } className="icon" />
         <div className="menu">
-          <Link to="/">Home</Link>
-          <Link to="/articles">Articles</Link>
+          <Link to="/" className="link">Home</Link>
+          <Link to="/articles" className="link">Articles</Link>
+          <Link to="/start" className="link started-btn">Get Started</Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,29 @@
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 2px 1px 15px #f5f5f5, -2px 1px 15px #f5f5f5, 0 0 5px #e1e1e6;
+}
+#header #header-wrap {
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header #header-wrap .icon {
+  width: 45px;
+}
+#header #header-wrap .menu .link {
+  margin: 0 0 0 20px;
+}
+#header #header-wrap .menu .started-btn {
+  background: #006d77;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=header.css.map */

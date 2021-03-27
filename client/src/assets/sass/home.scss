@@ -1,0 +1,27 @@
+$font-body: 'Roboto', serif;
+$font-header: 'Noto Serif JP', sans-serif;
+
+#banner {
+  width: 100%;
+  display: flex; align-items: center;
+  border-bottom: 1px solid #bbbbbb;
+  #banner-wrap {
+    width: 500px;
+    padding: 40px 0 60px 0;
+    .header {
+      font-family: $font-header;
+      font-size: 3rem;
+    }
+    .subject {
+      margin: 60px 0 40px 0;
+      font-weight: bold;
+    }
+    .started-btn {
+      background: #006d77;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+  }
+}

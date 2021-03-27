@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
+import { Helmet } from 'react-helmet'
 
 // components
-import Header from '../components/header/Header'
 import Banner from '../components/home/Banner'
 
 function Home() {
   return (
     <Fragment>
-      <Header />
+      <Helmet><title>Home</title></Helmet>
       <Banner />
     </Fragment>
   )
