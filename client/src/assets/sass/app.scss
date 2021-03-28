@@ -14,21 +14,11 @@ body {
   font-size: 16px;
 }
 
-h1 { line-height: 4.2rem; }
 p { line-height: 1.5rem; }
 
 .link {
   color: #000;
   text-decoration: none;
-}
-
-#app {
-  width: 100%;
-  display: flex; justify-content: center;
-  #app-wrap {
-    width: 1200px;
-    margin: 0 20px;
-  }
 }
 
 @media screen and ( max-width: 500px ) {

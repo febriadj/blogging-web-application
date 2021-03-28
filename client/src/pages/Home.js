@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 
 // components
@@ -6,10 +6,12 @@ import Banner from '../components/home/Banner'
 
 function Home() {
   return (
-    <Fragment>
-      <Helmet><title>Home</title></Helmet>
-      <Banner />
-    </Fragment>
+    <div id="home">
+      <div id="home-wrap">
+        <Helmet><title>Home</title></Helmet>
+        <Banner />
+      </div>
+    </div>
   )
 }
 

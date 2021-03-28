@@ -1,0 +1,25 @@
+#articles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+#articles #articles-wrap {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 0;
+  width: 600px;
+}
+#articles #articles-wrap .card .created-at {
+  font-size: 0.85rem;
+}
+#articles #articles-wrap .card .title {
+  margin: 5px 0 20px 0;
+  text-decoration: underline;
+}
+#articles #articles-wrap .card .description {
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+/*# sourceMappingURL=articles.css.map */

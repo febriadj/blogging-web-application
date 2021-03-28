@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import CardArticle from './CardArticles'
 
 class ListArticles extends Component {
@@ -23,17 +23,11 @@ class ListArticles extends Component {
     const { listArticles } = this.state
 
     return (
-      <div id="list-articles">
-        <div id="list-articles-wrap">
-          
-          {
-            listArticles.map(article => {
-              return <CardArticle article={ article } key={ article.id } />
-            })
-          }
-  
-        </div>
-      </div>
+      <Fragment>
+        { listArticles.map(article => {
+            return <CardArticle article={ article } key={ article.id } />
+        }) }
+      </Fragment>          
     )
   }
 }

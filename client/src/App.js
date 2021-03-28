@@ -5,6 +5,7 @@ import './assets/css/app.css'
 // import pages
 import Home from './pages/Home'
 import Articles from './pages/Articles'
+import ArticleDetails from './pages/ArticleDetails'
 import NotFound from './pages/NotFound'
 
 // import header and footer
@@ -15,15 +16,12 @@ function App() {
     <Fragment>
       <BrowserRouter>
         <Header />
-        <div id="app">
-          <div id="app-wrap">
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/articles" component={Articles} />
-              <Route component={NotFound} />
-            </Switch>
-          </div>
-        </div>
+        <Switch>
+          <Route path="/" exact component={ Home } />
+          <Route path="/articles" exact component={ Articles } />
+          <Route path="/articles/:title" exact component={ ArticleDetails } />
+          <Route component={ NotFound } />
+        </Switch>
       </BrowserRouter>
     </Fragment>
   )
