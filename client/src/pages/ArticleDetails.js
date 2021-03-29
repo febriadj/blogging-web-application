@@ -1,10 +1,9 @@
-import { useParams } from 'react-router-dom'
+import Content from '../components/articleDetails/Content'
 
 function ArticleDetails() {
-  const { title } = useParams()
   return (
     <div id="result">
-      {title}
+      <Content />
     </div>
   )
 }

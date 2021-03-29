@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={ Home } />
           <Route path="/articles" exact component={ Articles } />
-          <Route path="/articles/:title" exact component={ ArticleDetails } />
+          <Route path="/articles/:url" component={ ArticleDetails } />
           <Route component={ NotFound } />
         </Switch>
       </BrowserRouter>
