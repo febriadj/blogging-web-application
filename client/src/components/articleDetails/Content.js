@@ -10,7 +10,7 @@ function GetArticle(setArticle) {
   })
   .then(result => result.json())
   .then(result => {
-    setArticle(result[0])
+    setArticle(result)
   })
 }
 
@@ -24,17 +24,22 @@ function createdAt(created_at) {
 
 function Content() {
   const [state, setState] = useState('')
+  const { details } = state
 
   if (state.length <= 1) GetArticle(setState)
 
   return (
-    <Fragment>
-      <div className="header">
-        <h2 className="title">{ state.title }</h2>
-        <p className="description">{ state.description }</p>
-        <p className="date">{ createdAt(state.created_at) }</p>
-      </div>
-    </Fragment>
+    <div className="header">
+      {
+        details !== undefined ? 
+          <Fragment>
+            <h1 className="title">{ details.title }</h1>
+            <p className="description">{ details.description }</p>
+            <p className="date">{ createdAt(details.created_at) }</p>
+          </Fragment>
+        : null
+      }
+    </div>
   )
 }
 

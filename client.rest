@@ -16,3 +16,8 @@ Content-Type: application/json
   "email": "iamfebriadji@gmail.com",
   "comment": "thank you for sharing this article"
 }
+
+###
+
+GET http://localhost:8080/articles/penggunaan-method-method-pada-array-javascript
+Content-Type: application/json
