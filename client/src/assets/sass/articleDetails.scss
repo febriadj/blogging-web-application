@@ -1,17 +1,35 @@
-$font-body: 'Roboto', serif;
-$font-header: 'Noto Serif JP', sans-serif;
+$font-roboto: 'Roboto', serif;
+$font-noto: 'Noto Serif JP', sans-serif;
 
 #details {
   width: 100%;
   display: flex; justify-content: center;
   #details-wrap {
-    width: 650px;
-    padding: 40px 0 0 0;
+    width: 700px;
+    padding: 40px 0;
     margin: 0 40px;
-    font-family: $font-header;
+    font-family: $font-noto;
     .header {
-      .title { font-size: 2.5rem; margin: 0 0 40px 0; }
+      .title { font-family: $font-roboto; font-size: 2.5rem; margin: 0 0 40px 0; }
       .date { margin: 20px 0 0 0;}
+    }
+    .content {
+      margin: 80px 0 0 0;
+      h1, h2, h3 {
+        font-family: $font-roboto;
+        margin: 0 0 10px 0;
+      }
+      p {
+        padding: 10px 0;
+      }
+      code {
+        background: #eee;
+      }
+      pre {
+        margin: 10px 0;
+        padding: 20px;
+        background: #eee;
+      }
     }
   }
 }

@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import MarkdownView from 'react-showdown'
 
 function GetArticle(setArticle) {
   const { url } = useParams()
@@ -29,17 +30,25 @@ function Content() {
   if (state.length <= 1) GetArticle(setState)
 
   return (
-    <div className="header">
-      {
-        details !== undefined ? 
-          <Fragment>
-            <h1 className="title">{ details.title }</h1>
-            <p className="description">{ details.description }</p>
-            <p className="date">{ createdAt(details.created_at) }</p>
-          </Fragment>
-        : null
-      }
-    </div>
+    <Fragment>
+      <div className="header">
+        {
+          details !== undefined ? 
+            <Fragment>
+              <h1 className="title">{ details.title }</h1>
+              <p className="description">{ details.description }</p>
+              <p className="date">{ createdAt(details.created_at) }</p>
+            </Fragment>
+          : null
+        }
+      </div>
+      <div className="content">
+        <MarkdownView 
+          markdown={ state.content }
+          options={{ table: true, emoji: true }}
+        />
+      </div>
+    </Fragment>
   )
 }
 

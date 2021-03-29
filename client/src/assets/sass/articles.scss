@@ -1,5 +1,5 @@
-$font-body: 'Roboto', serif;
-$font-header: 'Noto Serif JP', sans-serif;
+$font-roboto: 'Roboto', serif;
+$font-noto: 'Noto Serif JP', sans-serif;
 
 #articles {
   width: 100%;
@@ -12,7 +12,7 @@ $font-header: 'Noto Serif JP', sans-serif;
     .card {
       .created-at { font-size: 0.85rem; }
       .title { margin: 5px 0 20px 0; text-decoration: underline; }
-      .description { font-family: $font-header; }
+      .description { font-family: $font-noto; }
     }
   }
 }
