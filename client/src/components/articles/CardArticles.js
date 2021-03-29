@@ -15,7 +15,12 @@ function CardArticle(props) {
   return (
     <div className="card">
       <p className="created-at">{ createdAt() }</p>
-      <h1 className="title"><Link to={ '/articles/' + props.article.url } className="link">{ props.article.title }</Link></h1>
+      <h1 className="title">
+        <Link 
+          to={ '/articles/' + props.article.url } 
+          className="link">{ props.article.title }
+        </Link>
+      </h1>
       <p className="description">{ props.article.description }</p>
     </div>
   )

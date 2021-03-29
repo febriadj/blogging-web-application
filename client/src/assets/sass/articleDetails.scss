@@ -1,0 +1,17 @@
+$font-body: 'Roboto', serif;
+$font-header: 'Noto Serif JP', sans-serif;
+
+#details {
+  width: 100%;
+  display: flex; justify-content: center;
+  #details-wrap {
+    width: 650px;
+    padding: 40px 0 0 0;
+    margin: 0 40px;
+    font-family: $font-header;
+    .header {
+      .title { font-size: 2.5rem; margin: 0 0 40px 0; }
+      .date { margin: 20px 0 0 0;}
+    }
+  }
+}

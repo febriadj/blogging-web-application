@@ -6,7 +6,7 @@ $font-header: 'Noto Serif JP', sans-serif;
   display: flex; justify-content: center;
   padding: 40px 0;
   #articles-wrap {
-    margin: 0 20px;
+    margin: 0 40px;
     display: grid; grid-template-columns: 1fr; gap: 40px 0;
     width: 600px;
     .card {

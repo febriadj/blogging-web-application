@@ -5,7 +5,7 @@
   padding: 40px 0;
 }
 #articles #articles-wrap {
-  margin: 0 20px;
+  margin: 0 40px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px 0;
