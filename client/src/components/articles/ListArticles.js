@@ -3,7 +3,7 @@ import CardArticle from './CardArticles'
 
 class ListArticles extends Component {
   constructor(props) {
-    super()
+    super(props)
 
     this.state = { listArticles: [] }
   }
@@ -33,3 +33,4 @@ class ListArticles extends Component {
 }
 
 export default ListArticles
+

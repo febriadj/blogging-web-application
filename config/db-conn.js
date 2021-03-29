@@ -22,7 +22,7 @@ async function dbConnect() {
     conn.query(articles, err => err ? console.log(err) : null)
     conn.query(comments, err => err ? console.log(err) : null)
 
-    console.log('mysql connected')
+    console.log('MySql Connected')
   })
 }
 

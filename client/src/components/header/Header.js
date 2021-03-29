@@ -7,7 +7,7 @@ function Header() {
   return (
     <div id="header">
       <div id="header-wrap">
-        <img src={ headerIcon } className="icon" />
+        <img src={ headerIcon } alt="desc" className="icon" />
         <div className="menu">
           <Link to="/" className="link">Home</Link>
           <Link to="/articles" className="link">Articles</Link>

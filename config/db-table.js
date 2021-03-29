@@ -8,7 +8,7 @@ exports.tableArticles = function() {
       description TINYTEXT,
       url TINYTEXT UNIQUE KEY NOT NULL,
       file_name CHAR(100) UNIQUE KEY NOT NULL,
-      file_size INT NOT NULL,
+      file_size VARCHAR(10) NOT NULL,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
     )`
@@ -21,9 +21,10 @@ exports.tableComments = function() {
   return new Promise(resolve => {
     let sql = `CREATE TABLE IF NOT EXISTS comments (
       id INT PRIMARY KEY AUTO_INCREMENT,
-      id_articles INT UNIQUE KEY NOT NULL,
+      id_articles INT NOT NULL,
       username VARCHAR(100) DEFAULT 'Anonymous' NOT NULL,
       email TINYTEXT NOT NULL,
+      comment LONGTEXT NOT NULL,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
       FOREIGN KEY(id_articles) REFERENCES articles(id) ON DELETE CASCADE ON UPDATE CASCADE 
