@@ -1,0 +1,25 @@
+#post-articles {
+  width: 100%;
+  display: flex; justify-content: center;
+  padding: 40px 0;
+  #post-articles-wrap {
+    width: 1200px;
+    margin: 0 40px;
+    .uploads {
+      display: flex;
+      form {
+        display: grid; grid-template-columns: 1fr;
+        input {
+          padding: 15px 0 20px 0;
+          border: none; border-radius: 0; outline: none;
+          border-bottom: 1px solid #bbb;
+          margin: 0 0 20px 0;
+        }
+        button {
+          border: none; border-radius: 0; outline: none;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
