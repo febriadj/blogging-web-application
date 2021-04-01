@@ -1,0 +1,20 @@
+#footer {
+  width: 100%;
+  display: flex; justify-content: center;
+  background: #202020;
+  margin: 40px 0 0 0;
+  #footer-wrap {
+    padding: 40px 0;
+    width: 1200px;
+    margin: 0 40px;
+    display: flex; justify-content: space-between;
+    color: #fff;
+    .menu {
+      display: flex; align-items: center;
+      .link {
+        margin: 0 0 0 20px;
+        color: #fff;
+      }
+    }
+  }
+}

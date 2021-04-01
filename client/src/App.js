@@ -11,6 +11,7 @@ import PostArticles from './pages/PostArticles'
 
 // import header and footer
 import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/articles/:url" exact component={ ArticleDetails } />
           <Route component={ NotFound } />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </Fragment>
   )
